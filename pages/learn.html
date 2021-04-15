@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="topbar">
+      <div class="container">
+        <a href="../index.html" class="logo">phenomena</a>
+        <nav>
+          <ul class="topnav">
+            <li><a href="../pages/learn.html">Learn</a></li>
+            <li><a href="../pages/experiment.html">Experiment</a></li>
+            <li><a href="../pages/play.html">Play</a></li>
+            
+          </ul>
+        </nav>
+        <a href="https://www.linkedin.com/in/mert-bozkurtlar/" class="logo" target="_blank" id="nameLogo">Mert Bozkurtlar</a>
+      </div>
+    </div>
+    
+    <div class="hero" id="hero">
+      <div class="container">
+        <canvas></canvas>
+        <div class= "input">
+          <p style="font-size: 1.2em; width: 500px;" id="learnText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam sunt dignissimos assumenda voluptates esse porro veritatis consequuntur, ipsam, deleniti blanditiis aliquam iure iusto ullam alias! Mollitia magnam omnis animi.</p>
+          <button style="margin-right: 20px;" id="backButton">Back</button>
+          <button id="nextButton">Next</button>
+          <div class="color-picker" id="colorPicker" style="position: relative; top: 0;">
+            <button style="background-color: teal; color: teal;" id="teal">aa</button>
+            <button style="background-color: #6084FF; color: #6084FF;" id="blue">aa</button>
+            <button style="background-color: red; color: red;" id="red">aa</button>
+            <button style="background-color: pink; color: pink;" id="pink">aa</button>
+            <button style="background-color: magenta; color: magenta;" id="magenta">aa</button>
+          </div>
+          <p style="font-size: 3em; color: white;"><button id="lineButton">y</button> = mx + b</p>
+          <div class="variables">
+            <label for="slope">m (slope):</label>
+            <input type="range" min=-100 max=100 value=10 steps=1  id="slope" name="slope">
+            <input class="box" type="number" id="slopeBox" name="slope" min=-10 max=10 step=0.1>
+            <label for="intercept">b (intercept):</label>
+            <input type="range" min=-10 max=10 value=0 steps=1  id="intercept" name="intercept">
+            <input class="box" type="number" id="interceptBox" name="intercept" min=-10 max=10 step=1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../scripts/learn.js"></script>
+
+</body>
+</html>

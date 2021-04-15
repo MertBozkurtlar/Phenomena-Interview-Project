@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="topbar" id="topbar">
+      <div class="container">
+        <a href="../index.html" class="logo">phenomena</a>
+        <nav>
+          <ul class="topnav">
+            <li><a href="../pages/learn.html">Learn</a></li>
+            <li><a href="../pages/experiment.html">Experiment</a></li>
+            <li><a href="../pages/play.html">Play</a></li>
+            
+          </ul>
+        </nav>
+        <a href="https://www.linkedin.com/in/mert-bozkurtlar/" class="logo" target="_blank" id="nameLogo">Mert Bozkurtlar</a>
+      </div>
+    </div>
+    <div class="index" id="difficultySelection"> 
+      <p style="color: white; font-size: 20px; margin-bottom: 20px;">Connect two platforms to each other by giving correct constants to linear functions!</p>
+      <div class= "selection-grid">
+          <button id="easyButton"><br><span style="font-size: 30px;">Easy</span> <br><br><br> Use sliders to answer</button>
+          <button id="mediumButton"><br><span style="font-size: 30px;">Medium</span> <br><br><br> Select the correct answer from multiple choices</button>
+          <button id="hardButton"><br><span style="font-size: 30px;">Hard</span> <br><br><br> Type the correct answer </button>
+      </div>
+    </div>
+    <div class="hero" id="hero">
+      <div class="container" id="game">
+        <canvas></canvas>
+        <div class= "input">
+          <div class="color-picker" id="colorPicker">
+            <button style="background-color: teal; color: teal;" id="teal">aa</button>
+            <button style="background-color: #6084FF; color: #6084FF;" id="blue">aa</button>
+            <button style="background-color: red; color: red;" id="red">aa</button>
+            <button style="background-color: pink; color: pink;" id="pink">aa</button>
+            <button style="background-color: magenta; color: magenta;" id="magenta">aa</button>
+          </div>
+          <p style="font-size: 3em; color: white;"><button id="lineButton">y</button> = mx + b</p>
+          <div id="singleChoice">
+            <div class="variables" id="variables">
+              <label for="slope">m (slope):</label>
+              <input type="range" min=-100 max=100 value=10 steps=1  id="slope" name="slope">
+              <input class="box" type="number" id="slopeBox" name="slope" min=-10 max=10 step=0.1>
+              <label for="intercept">b (intercept):</label>
+              <input type="range" min=-10 max=10 value=0 steps=1  id="intercept" name="intercept">
+              <input class="box" type="number" id="interceptBox" name="intercept" min=-10 max=10 step=1>
+              <button class="check" id="checkButton">Check</button>
+              <button class="check" id="nextButtonSingle">Next</button>
+            </div>
+          </div>
+          <div class="multiple-choice" id="multipleChoice">
+            <div id="quiz"></div>
+            <button id="submit">Check</button>
+            <div id="results"></div>
+            <button id="nextButton">Next</button>
+          </div>
+          <p style="font-size: 1.2em; width: 600px;" id="learnText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam sunt dignissimos assumenda voluptates esse porro veritatis consequuntur, ipsam, deleniti blanditiis aliquam iure iusto ullam alias! Mollitia magnam omnis animi.</p>
+        </div>
+    </div>
+
+    <img src="../assets/grass.png" id="grass" style="display: none;">
+    <script src="../scripts/play.js"></script>
+</body>
+</html>

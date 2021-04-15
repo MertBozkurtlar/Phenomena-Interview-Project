@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  background-color: #464e66;
+  font-family: "Poppins";
+}
+
+.topbar {
+  background-color: #6084FF;
+}
+
+.topbar .container {
+  margin: 0 2% 0 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+}
+
+.topbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: unset;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin-top: 0.40em;
+}
+
+.topbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+
+.topbar li {
+  margin-right: 1em;
+  margin-left: 1em;
+  list-style: none;
+}
+
+.topbar li a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: white;
+  margin-top: 2%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+.topbar li a:hover {
+  background-color: white;
+  color: #6084FF;
+}
+
+.hero {
+  margin: 0;
+  position: absolute;
+  top: 22%;
+  left: 16%;
+}
+
+.hero canvas {
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+.hero .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 640px auto;
+      grid-template-columns: 640px auto;
+}
+
+.hero .input {
+  margin: 100px 50px 50px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .input span {
+  font-size: 0.4em;
+  font-style: bold;
+  color: teal;
+}
+
+.hero .input .color-picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50px;
+}
+
+.hero .input .color-picker button {
+  margin: 0 10px 0 0;
+  border-radius: 6px;
+}
+
+.hero .input p {
+  margin: 0 0 0.5em 0;
+  font-size: 3em;
+  color: white;
+}
+
+.hero .input p button {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.hero .input label {
+  color: white;
+}
+
+.hero .input input {
+  margin-left: 10px;
+}
+
+.hero .input input[type="number"] {
+  width: 15%;
+}
+
+.hero .input input[type=range] {
+  -webkit-appearance: none;
+  background-color: #464e66;
+}
+
+.hero .input input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero .input input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #6084FF;
+  margin-top: -6px;
+}
+
+.hero .input input[type=range]:focus {
+  outline: none;
+}
+
+.hero .input .variables {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px auto 300px;
+      grid-template-columns: 150px auto 300px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  row-gap: 1em;
+}
+
+.hero .input .variables .check:hover {
+  color: white;
+}
+
+.hero .input .secondary span {
+  color: red;
+}
+
+.hero .input .secondary .color-picker {
+  position: relative;
+  top: 0;
+}
+
+.hero .input button {
+  color: #6084FF;
+  background: none;
+  border: none;
+  margin: 1em 0 0.6em 0;
+  padding: 0;
+  font-size: 2em;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.hero .input button:hover {
+  color: teal;
+  cursor: pointer;
+}
+
+.hero .input button:focus {
+  outline: none;
+}
+
+.index {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin-top: 7%;
+}
+
+.index .selection-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+}
+
+.index .selection-grid a, .index .selection-grid button {
+  text-decoration: none;
+  background-color: #6084FF;
+  height: 400px;
+  width: 220px;
+  border-radius: 20px;
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.index .selection-grid button {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 450px;
+  padding-bottom: 70px;
+}
+
+.index .selection-grid button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

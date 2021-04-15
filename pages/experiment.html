@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="topbar">
+      <div class="container">
+        <a href="../index.html" class="logo">phenomena</a>
+        <nav>
+          <ul class="topnav">
+            <li><a href="../pages/learn.html">Learn</a></li>
+            <li><a href="../pages/experiment.html">Experiment</a></li>
+            <li><a href="../pages/play.html">Play</a></li>
+          </ul>
+        </nav>
+        <a href="https://www.linkedin.com/in/mert-bozkurtlar/" class="logo" target="_blank" id="nameLogo">Mert Bozkurtlar</a>
+      </div>
+    </div>
+    
+    <div class="hero" id="hero">
+      <div class="container">
+        <canvas></canvas>
+        <div class= "input">
+          <div class="color-picker" id="colorPicker">
+            <button style="background-color: teal; color: teal;" id="teal">aa</button>
+            <button style="background-color: #6084FF; color: #6084FF;" id="blue">aa</button>
+            <button style="background-color: red; color: red;" id="red">aa</button>
+            <button style="background-color: pink; color: pink;" id="pink">aa</button>
+            <button style="background-color: magenta; color: magenta;" id="magenta">aa</button>
+          </div>
+          <p style="font-size: 3em; color: white;"><button id="lineButton">y</button> = mx + b</p>
+          <div class="variables">
+            <label for="slope">m (slope):</label>
+            <input type="range" min=-100 max=100 value=10 steps=1  id="slope" name="slope">
+            <input class="box" type="number" id="slopeBox" name="slope" min=-10 max=10 step=0.1>
+            <label for="intercept">b (intercept):</label>
+            <input type="range" min=-10 max=10 value=0 steps=1  id="intercept" name="intercept">
+            <input class="box" type="number" id="interceptBox" name="intercept" min=-10 max=10 step=1>
+          </div>
+          <button id="addButton">ADD LINE</button>
+          <div class= "secondary" id="secondary" style="display: none;">
+            <div class="color-picker" id="colorPickerTwo">
+              <button style="background-color: teal; color: teal;" id="tealTwo">aa</button>
+              <button style="background-color: #6084FF; color: #6084FF;" id="blueTwo">aa</button>
+              <button style="background-color: red; color: red;" id="redTwo">aa</button>
+              <button style="background-color: pink; color: pink;" id="pinkTwo">aa</button>
+              <button style="background-color: magenta; color: magenta;" id="magentaTwo">aa</button>
+            </div>
+            <p style="font-size: 3em; color: white;"><button id="lineButtonTwo">y</button> = mx + b</p>
+            <div class="variables">
+              <label for="slopeTwo">m (slope):</label>
+              <input type="range" min=-100 max=100 value=-10 steps=1  id="slopeTwo" name="slopeTwo">
+              <input class="box" type="number" id="slopeBoxTwo" name="slopeTwo" min=-10 max=10 step=0.1>
+              <label for="interceptTwo">b (intercept):</label>
+              <input type="range" min=-10 max=10 value=0 steps=1  id="interceptTwo" name="interceptTwo">
+              <input class="box" type="number" id="interceptBoxTwo" name="interceptTwo" min=-10 max=10 step=1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../scripts/experiment.js"></script>
+</body>
+</html>
