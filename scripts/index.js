@@ -1,5 +1,5 @@
 const nameLogo = document.getElementById("nameLogo")
-
+const hero = document.getElementById("hero")
 
 if(innerWidth < 1440 || innerHeight <900){
     hero.style.top= "10%"
